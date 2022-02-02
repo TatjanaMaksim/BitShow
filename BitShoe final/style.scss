@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(24, 20, 20, 0.753);
+    width: 100%;
+
+    .search {
+      position: absolute;
+      background-color: aquamarine;
+      width: 100%;
+    }
+
+    .headertext {
+      color: white;
+      padding: 10px;
+      margin: 0;
+    }
+    .searchfield {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+    }
+    input {
+      border: none;
+      border-radius: 5px;
+      height: 20px;
+      width: 150px;
+      padding: 0;
+    }
+  }
+  .watchlist-btn {
+    background-color: crimson;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    .popularshows {
+      font-size: 130%;
+      font-weight: 600;
+      margin: 30px 0;
+      width: 100%;
+      text-align: center;
+    }
+    .movies {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto 15%;
+      .card {
+        width: 20%;
+        margin: 20px 3%;
+      }
+    }
+  }
+
+  footer {
+    color: white;
+    text-align: center;
+    background-color: rgba(24, 20, 20, 0.753);
+    padding: 20px;
+  }
+}
+.watchlist {
+  display: none;
+  position: absolute;
+}
+
+.show {
+  display: block;
+  
+}
